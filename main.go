@@ -18,7 +18,7 @@ func main() {
   e.GET("/", hello)
 
   // Start server
-  e.Logger.Fatal(e.Start(":1323"))
+  e.Logger.Fatal(e.Start(":1325"))
 }
 
 // Handler
