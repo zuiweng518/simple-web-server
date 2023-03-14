@@ -4,6 +4,7 @@ pipeline {
       environment {
         GO114MODULE = 'on'
         CGO_ENABLED = 0
+        GOPROXY=https://mirrors.aliyun.com/goproxy/
         GOPATH = "${JENKINS_HOME}/jobs/${JOB_NAME}/builds/${BUILD_ID}"
     }
     stages {
