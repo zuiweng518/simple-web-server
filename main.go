@@ -24,7 +24,6 @@ func main() {
 
   // Start server
   e.Logger.Fatal(e.Start(":1325"))
-  os.Getppid()
 }
 
 // Handler
