@@ -32,7 +32,7 @@ func hello(c echo.Context) error {
   return c.String(http.StatusOK, "Hello, World! -- 17")
 }
 func  CreatePidFile(){
-    filePath := "/opt/simple-web/pid"
+    filePath := "/opt/simple-web/web.pid"
     file, err := os.OpenFile(filePath, os.O_WRONLY|os.O_CREATE, 0666)
     if err != nil {
         fmt.Println("文件打开失败", err)
