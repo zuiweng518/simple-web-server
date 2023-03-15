@@ -40,7 +40,7 @@ func  CreatePidFile(){
     defer file.Close()
     //写入文件时，使用带缓存的 *Writer
     write := bufio.NewWriter(file)
-    write.WriteString(os.Getppid())
+  write.WriteString(fmt.Sprintf(os.Getppid()))
     //Flush将缓存的文件真正写入到文件中
     write.Flush()
 }
