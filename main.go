@@ -22,10 +22,10 @@ func main() {
 
   // Routes
   e.GET("/", hello)
-
+  CreatePidFile()
   // Start server
   e.Logger.Fatal(e.Start(":1325"))
-  CreatePidFile()
+  
 }
 
 // Handler
